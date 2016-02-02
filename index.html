@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frame-by-Frame</title>
+
+    
+    <!-- Latest compiled CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script src="frameIterate.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id = "space" class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <h3>Frame-by-Frame Analysis</h3>
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                         <input id="url" type="text" class="form-control input-lg" placeholder="https://www.youtube.com/watch?v=FtmcnR661Ks" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-info btn-lg" type="submit" id="idButton">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </span>   
+                    
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="panel panel-default">
+<div id="panel" class="panel-body">
+<div class="row">
+<div class="col-md-8 col-md-offset-2">
+<div class="embed-responsive embed-responsive-16by9">
+  <div id="player"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="panel-footer">
+<div class="row">
+<div class="col-md-4 col-md-offset-4">
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group" role="group" aria-label="Frame Traversal">
+    <button type="button" class="btn btn-primary"onclick="framesBackward(5)">-5</button>
+    <button type="button" class="btn btn-primary"onclick="framesBackward(1)">-1</button>
+    <button type="button" class="btn btn-primary"onclick="framesForward(1)">1</button>
+    <button type="button" class="btn btn-primary"onclick="framesForward(5)">5</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Time Storage">
+    <button type="button" class="btn btn-primary"onclick="storeTime()">Store Time</button>
+    <button type="button" class="btn btn-primary"id='time' onclick="goToTime()">Current Stored Time</button>
+    </div>
+</div>
+</div>
+</div>
+
+</div>
+</div> 
+
+    
+
+</body>
+</html>
