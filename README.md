@@ -1,2 +1,0 @@
-# jpjamipark.github.io
-Youtube
